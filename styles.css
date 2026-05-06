@@ -1,0 +1,378 @@
+/* control */
+
+body {
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    background: linear-gradient(to bottom right, #232323, gray);
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    width: 80%;
+    text-align: center;
+    margin: 0;
+    background-color: #fff8;
+    border-radius: 10px;
+}
+
+/* imagenes */
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* hover */
+
+.instal:hover {
+    background-color: #f2e8e1;
+    outline: 3px solid #7a695d;
+    color: #874421;
+    border: 3px solid #874421;
+}
+
+.personal:hover {
+    background-color: #f2e8e1;
+    outline: 3px solid #7a695d;
+    color: #874421;
+    border: 3px solid #874421;
+}
+
+.academic:hover {
+    background-color: #f2e8e1;
+    outline: 3px solid #7a695d;
+    color: #874421;
+    border: 3px solid #874421;
+}
+.pagsec:hover {
+    background-color: #eee;
+    color: black;
+    outline: 3px solid white;
+    outline-offset: 0; 
+    border-color: white;
+    border-top: 5px solid gray;
+}
+
+.pagAct:hover {
+    background-color: #555;
+    color: white;
+    outline: 3px solid white;
+    outline-offset: 0; 
+    border-top: 3px solid #222;
+}
+
+.pagPer:hover {
+    background-color: #eee;
+    color: black;
+    outline: 3px solid white;
+    outline-offset: 0; 
+    border-color: white;
+    border-top: 5px solid gray;
+}
+
+.pagTec:hover {
+    background-color: #eee;
+    color: black;
+    outline: 3px solid white;
+    outline-offset: 0; 
+    border-color: white;
+    border-top: 5px solid gray;
+}
+
+.pagHor:hover {
+    background-color: #eee;
+    color: black;
+    outline: 3px solid white;
+    outline-offset: 0; 
+    border-color: white;
+    border-top: 5px solid gray;
+}
+
+.pag1:hover {
+    background-color: black;
+    color: white;
+    outline: 3px solid white;
+    outline-offset: 0; 
+    border-top: 5px solid gray;
+} 
+
+
+/* barra inferior */
+
+#ocultar {
+    font-size: 20px;
+    padding: 10px;
+    height: 60px;
+    background-color: #fff8;
+    margin: 0;
+    border-radius: 12px;
+    text-align: center;
+    align-items: center;
+    color: #111b;
+    display: flex;
+    border: 3px solid #999;
+}
+
+.sections {
+    order: -2;
+    z-index: 8;
+    max-width: 100vw;
+    border-bottom: 1px solid white;
+    background-color: #111a;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+    position: sticky;
+    top: 0;
+    height: 80px;
+}
+
+.marca {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+    border: 3px solid #fff5;
+    border-radius: 12px;
+    gap: 10px;
+}
+
+.pags {
+    display: inline-flex;
+    background-color: transparent;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 70vw;
+    gap: 10px;
+    padding: 0 10px;
+    border-radius: 12px;
+}
+
+.pags2 {
+    display: inline-flex;
+    background-color: transparent;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 70vw;
+    gap: 10px;
+    padding: 0 10px;
+    border-radius: 12px;
+}
+
+.pagAct {
+    background-color: #fff7;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    width: auto;
+    border-radius: 8px;
+    border: 3px solid #fff;
+    outline: 4px solid transparent;
+    outline-offset: 18px;
+    transition-property: background-color, color, outline, outline-offset, border-top;
+    transition-duration: 1.5s;
+}
+
+.pagsec, .pagPer, .pagTec, .pagHor {
+    background-color: #fff2;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    width: auto;
+    border-radius: 8px;
+    border: 3px solid #fff1;
+    outline: 4px solid transparent;
+    outline-offset: 18px;
+    transition-property: background-color, color, outline, outline-offset, border-color;
+    transition-duration: 1.5s;
+}
+
+.pag1 {
+    width: auto;
+    background-color: white;
+    text-align: center;
+    padding: 8px 15px;
+    margin-left: 50px;
+    border-radius: 12px;
+    color: black;
+    font-size: 15px;
+    outline: 3px solid transparent;
+    outline-offset: 18px;
+    transition-property: background-color, color, outline, outline-offset, border;
+    transition-duration: 1.5s;
+    border: 3px solid gray;
+}
+
+/* body */
+
+.cuerpo {
+    width: 90vw;
+    height: 100vh;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 5px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to bottom, white, white),
+    linear-gradient(to bottom right, gray, #abab, black);
+}
+
+.intro1, .intro2, .intro3, .intro4, .intro5 {
+    width: 310px;
+    background-color: #aaa4;
+    margin: 0 1%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-flow: column;
+    text-align: center;
+    border-radius: 12px;
+    border: 3px solid gray;
+    color: #666
+}
+
+.intro2 {
+    width: 250px;
+    height: 250px;
+    background-image: url("http://imgfz.com/i/Zrd1kfW.jpeg");
+    background-size: 100% 100%;
+    order: 1;
+}
+
+b {
+    margin: 0;
+    font-size: 20px;
+    color: black
+} 
+
+/* media celulares */
+
+@media screen and (max-width: 667px) {
+    .sections {
+        justify-content: space-around;
+    }
+
+    #ocultar {
+        display:none;
+    }
+
+    .marca {
+        margin-left: 10px;
+    }
+
+    .institu {
+        display: none;
+    }
+
+    .pags {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .pags2 {
+        display: flex;
+        flex-direction: column;
+        overflow:hidden;
+        height: 40px;
+        margin-top: 8%;
+        transition-property: height, padding, margin-top, border;
+        transition-duration: 1.5s;
+        order: 3;
+    }
+
+    .pags2:hover {
+        height: auto;
+        padding: 20px !important;
+        margin-top: 80%;
+        background-color: #777d;
+        border: 3px solid #fff7;
+    }
+
+    .pagPer {
+        order: -1;
+    }
+
+    .pagsec {
+        order: -1;
+    }
+
+    
+    .pagTec {
+        order: -1;
+    }
+
+
+    .pag1 {
+        margin-left: -2%;
+    }
+
+    .cuerpo {
+        width: 80vw;
+        height: 250vh;
+        margin-bottom: 30px;
+    }
+}
+
+/* media tablet */
+
+@media screen and (min-width: 668px) and  (max-width: 990px) {
+    #ocultar {
+        display: none;
+    }
+
+    .pagPer {
+        display: none;
+    }
+
+    .pag1 {
+        margin-left: 10px;
+    }
+
+    .cuerpo {
+        width: 85vw;
+        flex-flow: column nowrap;
+        height: auto;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        gap: 30px;
+    }
+
+    h1 {
+        color: #666;
+        background-color: #eee;
+        border: 3px solid #888;
+        padding: 10px;
+    }
+
+    .intro1, .intro2, .intro4 {
+        margin-left: 30%;
+        background-color: #fff9;
+    }
+
+    .intro3, .intro5 {
+        margin-right: 30%;
+        background-color: #aaa7;
+        color: white;
+    }
+
+}
