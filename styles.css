@@ -329,6 +329,7 @@ b {
         width: 80vw;
         height: 250vh;
         margin-bottom: 30px;
+        gap: 10px;
     }
 }
 
